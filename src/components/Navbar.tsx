@@ -330,6 +330,11 @@ export const Navbar: React.FC = () => {
               My Account
             </button>
           </div>
+          <div className="pt-2.5 pb-1 text-center border-t border-stone-100">
+            <span className="text-[11px] text-stone-500 font-medium">
+              Developed by <strong className="text-emerald-700 font-bold">Salako Samuel</strong>
+            </span>
+          </div>
         </div>
       )}
     </header>

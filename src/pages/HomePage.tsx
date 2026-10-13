@@ -462,12 +462,17 @@ export const HomePage: React.FC = () => {
             <strong className="text-stone-900">Responsible Agricultural Intelligence:</strong> AgriAI clearly distinguishes verified facts, mathematical estimates, and recommendations. For critical livestock symptoms or chemical pesticide hazards, we advocate certified veterinary and agronomic extension support.
           </p>
         </div>
-        <button
-          onClick={() => setActiveTab('directory')}
-          className="shrink-0 px-3.5 py-1.5 rounded-lg bg-white border border-stone-300 font-bold text-stone-800 hover:bg-stone-50"
-        >
-          Find Local Vets &amp; Experts
-        </button>
+        <div className="flex items-center gap-3 shrink-0">
+          <span className="text-[11px] text-stone-500 font-medium">
+            Developed by <strong className="text-emerald-800 font-bold">Salako Samuel</strong>
+          </span>
+          <button
+            onClick={() => setActiveTab('directory')}
+            className="shrink-0 px-3.5 py-1.5 rounded-lg bg-white border border-stone-300 font-bold text-stone-800 hover:bg-stone-50 shadow-2xs"
+          >
+            Find Local Vets &amp; Experts
+          </button>
+        </div>
       </section>
     </div>
   );

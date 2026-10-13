@@ -121,6 +121,12 @@ export const MobileNav: React.FC = () => {
                 </button>
               ))}
             </div>
+
+            <div className="mt-4 pt-3 border-t border-stone-100 text-center">
+              <span className="text-[11px] text-stone-500 font-medium">
+                Developed by <strong className="text-emerald-700 font-bold">Salako Samuel</strong>
+              </span>
+            </div>
           </div>
         </div>
       )}

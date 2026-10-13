@@ -160,6 +160,10 @@ export const AdminPage: React.FC = () => {
               <span className="text-stone-500">Local Persistence:</span>
               <span className="text-emerald-400">Active (LocalStorage fallback sync)</span>
             </div>
+            <div className="flex justify-between pt-1 border-t border-stone-800">
+              <span className="text-stone-500">Developed By:</span>
+              <span className="text-emerald-300 font-semibold">Salako Samuel</span>
+            </div>
           </div>
         </div>
       </div>

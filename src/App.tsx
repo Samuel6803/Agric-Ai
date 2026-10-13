@@ -110,6 +110,12 @@ const AppContent: React.FC = () => {
       {/* Mobile Bottom Navigation Bar */}
       <MobileNav />
 
+      {/* Mobile Footer Credit (Visible on small screens) */}
+      <div className="md:hidden text-center text-xs text-stone-500 pb-20 px-4">
+        <p className="text-[11px]">&copy; {new Date().getFullYear()} AgriAI Agricultural Business Platform</p>
+        <p className="text-[12px] font-bold text-emerald-800 mt-0.5">Developed by Salako Samuel</p>
+      </div>
+
       {/* Footer */}
       <footer className="hidden md:block bg-stone-900 text-stone-400 text-xs border-t border-stone-800 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
@@ -124,6 +130,12 @@ const AppContent: React.FC = () => {
               <p className="text-stone-400 text-xs leading-relaxed">
                 Empowering smallholder farmers, agribusiness managers, and agricultural students with intelligent agronomic decision support, visual pest diagnosis, financial modeling, and direct market access.
               </p>
+              <div className="pt-1">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-stone-800 border border-stone-700 text-stone-300 text-[11px]">
+                  <span>Developed by</span>
+                  <strong className="text-emerald-400 font-bold">Salako Samuel</strong>
+                </span>
+              </div>
             </div>
 
             <div>
@@ -197,7 +209,11 @@ const AppContent: React.FC = () => {
           </div>
 
           <div className="border-t border-stone-800 pt-6 flex flex-col sm:flex-row items-center justify-between text-stone-500 text-[11px] gap-2">
-            <p>&copy; {new Date().getFullYear()} AgriAI Agricultural Business Platform. Powered by Google Gemini AI.</p>
+            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 text-center sm:text-left">
+              <p>&copy; {new Date().getFullYear()} AgriAI Agricultural Business Platform. Powered by Google Gemini AI.</p>
+              <span className="hidden sm:inline text-stone-700">•</span>
+              <p className="text-emerald-400 font-semibold">Developed by Salako Samuel</p>
+            </div>
             <div className="flex items-center gap-4">
               <button onClick={() => setActiveTab('admin')} className="hover:text-stone-400 transition-colors">
                 System Health
