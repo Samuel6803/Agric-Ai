@@ -1,0 +1,6 @@
+{
+  "name": "AgriAI - Agricultural Business & Intelligence Platform",
+  "description": "Comprehensive AI agricultural assistant, farm management, calculators, marketplace, business directory, and crop disease diagnosis.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
